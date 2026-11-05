@@ -1,0 +1,48 @@
+GUARDIAO DE DADOS 2.0 - FUNCOES NOVAS E ALTERADAS
+
+01. Quatro abas: Consumo, Ao vivo, Bloqueio, Diagnostico.
+02. Historico 24h / 7 dias / 30 dias mantido.
+03. Pesquisa no historico por nome/pacote.
+04. Detalhes de consumo ao tocar no app.
+05. Acesso a informacoes nativas do app.
+06. Selecionar/desmarcar bloqueio diretamente do historico.
+07. Coleta inicial automatica apos permissoes concedidas.
+08. Exportacao CSV de uso mantida.
+09. Medidor global de download/upload a cada 2 segundos.
+10. Grafico de ate 60 amostras.
+11. Contador de trafego agregado desde zerar sessao.
+12. Pico maximo da sessao.
+13. Registro de picos acima do limite ajustavel.
+14. Exportacao de eventos de pico em CSV.
+15. Zerar sessao (nao afeta franquia operadora).
+16. Perfis de economia: so ChatGPT, sociais, sincronizacao, todos comuns.
+17. Perfil avancado para todos os visiveis, exceto criticos conhecidos.
+18. Pesquisa por apps no bloqueio mantida.
+19. Filtro para mostrar apenas apps selecionados.
+20. Opcao de exibir apps do sistema.
+21. Confirmacao individual para apps criticos conhecidos.
+22. Confirmacoes e avisos dos efeitos da VPN.
+23. Contagem de apps efetivamente incluidos na VPN local.
+24. Registro dos pacotes ignorados/inexistentes pela VPN.
+25. Mensagem de erro da VPN quando houver.
+26. Aviso de mudancas pendentes na selecao apos iniciar VPN.
+27. Diagnostico do Android, modelo e rede.
+28. Diagnostico de permissão de dados de uso.
+29. Diagnostico de autorizacao VPN e notificacoes.
+30. Diagnostico de cobertura: selecionados, incluidos, fora da VPN.
+31. Auditoria por app dos incluidos na VPN.
+32. Exportacao de auditoria de todos os apps para CSV.
+33. Scroll independente no painel superior de bloqueio/diagnostico.
+34. Identidade do aplicativo e icone existentes preservados.
+35. Versionamento atualizado: versionCode 2, versionName 2.0.
+36. Workflow GitHub Actions com SDK 35 preinstalado mantido.
+
+CONSCIENTEMENTE NAO IMPLEMENTADO:
+- Atribuir em tempo real cada pico ao aplicativo responsavel.
+- VPN proxy/encaminhamento de trafego e uso simultaneo com outra VPN.
+- Bypass de franquia ou rede de WhatsApp do navio.
+- Monitoramento permanente em segundo plano (somente bloqueio de VPN persiste).
+- Root, ADB, privilegios de sistema ou acesso a dados protegidos.
+
+TESTE NECESSARIO: Java foi analisado sintaticamente, APK nao foi compilado no runner
+nem instalado fisicamente nesta sessao. Compilacao final pelo GitHub Actions.

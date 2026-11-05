@@ -1,0 +1,15 @@
+GUARDIÃO DE DADOS v3.0 — CELULAR → GITHUB → APK
+
+1) Envie o ZIP ORIGINAL para o GitHub sem extrair ou recompactar.
+2) Selecione repositório Android do Guardião e branch main (preferencialmente vazio para teste).
+3) Confirme que .github/workflows/main.yml foi incluído.
+4) GitHub > Actions > Gerar APK - Guardiao de Dados > execução.
+5) Baixe artifact Guardiao-de-Dados-APK > extrair app-debug.apk > instalar.
+6) Se o APK anterior não puder ser atualizado, é possivelmente a assinatura debug; desinstalar perde os perfis.
+7) Permita Dados de Uso e, somente para bloquear, VPN local.
+8) Consumo > Personalizado > escolha De e Até > Atualizar.
+9) Bloqueio > pesquise o app > marque/desmarque > confira status.
+10) Diagnóstico > Ver relatório / CSV completo / HTML bonito / JSON técnico.
+
+CSV é tabela (planilha). SVG é imagem. O relatório HTML abre no navegador e também no próprio app.
+Dados de tempo em blocos, não precisos por minuto. VPN só uma por vez.

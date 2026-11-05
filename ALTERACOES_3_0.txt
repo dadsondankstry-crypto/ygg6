@@ -1,0 +1,30 @@
+GUARDIÃO DE DADOS 3.0 — ALTERAÇÕES E LIMITES
+
+ADICIONADO
+1. Intervalos personalizados com data+hora início/fim (até 90 dias, histórico aproximado).
+2. Consulta de consumo por grupo UID com separação download/upload em Wi-Fi/móvel.
+3. Tempo de uso em primeiro plano/última abertura via UsageStatsManager (aproximados).
+4. Ordenações: total maior/menor, nome A-Z/Z-A, Wi-Fi, móvel, download, upload, tempo em primeiro plano, bloqueados e liberados.
+5. Busca e filtros por estado no consumo e no bloqueio.
+6. Inventário completo dos apps no diagnóstico, incluindo não usados no período.
+7. Status individual da seleção e inclusão na VPN, com consumo histórico em separado.
+8. Liberação e bloqueio rápidos por app, reconfiguração da VPN local quando ativa.
+9. Perfis pessoais nomeados: salvar, carregar, apagar.
+10. Relatório HTML offline com prévia no app, gráfico e inventário.
+11. Exportação completa CSV com estado e estatísticas de todos apps, e JSON técnico com diagnóstico.
+12. Prevenção de bloqueio do próprio Guardião e correção de corrida entre sessões de VPN.
+13. Guia, testes e observações de privacidade.
+
+PRESERVADO
+- VPN local com descarte de pacotes selecionados, não transmite dados a servidores.
+- Monitor global de download/upload ao vivo, gráfico de picos, CSV de picos.
+- Perfis predefinidos, proteção para apps críticos, permissão de uso.
+
+ATENÇÃO
+- Consumo por período tem granularidade limitada pela API do Android; não garante medidas precisas por minuto.
+- Um UID pode representar mais de um aplicativo.
+- "Na VPN" = configuração aplicada, NÃO prova o bloqueio de cada pacote.
+- Pacotes descartados são agregados; não há identificação por aplicativo em tempo real.
+- O app não contorna franquia de internet/WhatsApp do navio.
+- Uma VPN por vez. Não combine com 1S-VPN.
+- Código passou validação Java com stubs; APK final ainda requer GitHub Actions.
